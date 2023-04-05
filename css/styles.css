@@ -1,0 +1,170 @@
+
+:root{
+--first-color-slate: #434455 ;
+--dark-color-navy-blue: #2e2f42;
+--light-color-cloud: #f4f4fd;
+--secondary-color-white: #ffffff;
+--accent-color-ocean: #404bbf;
+--primaru-btn-color-iis: #4d5ae5;
+
+}
+
+/* Скидання маркерів і підкреслення */
+.list {
+	list-style: none;
+}
+	
+.link {
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: var(--first-color-slate);
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.02em;
+	background-color: var(--secondary-color-white);
+}
+
+/* Logo */
+
+.header-logo {
+	color: var(--dark-color-navy-blue);
+}
+
+.logo-link {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 117%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primaru-btn-color-iis);
+}
+
+
+/* Header */
+
+.menu-link {
+	font-weight: 500;
+	color: var(--dark-color-navy-blue);
+}
+
+.contact {
+	font-style: normal;
+}
+
+.contact-link {
+	font-weight: 400;
+	color: var(--first-color-slate);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+	color: var(--accent-color-ocean);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+	color: var(--accent-color-ocean);
+}
+
+/* Hero */
+
+.hero {
+background-color: var(--dark-color-navy-blue);
+}
+.hero-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 107%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--secondary-color-white);
+}
+
+.hero-btn {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+	cursor: pointer;
+	color: var(--secondary-color-white);
+	background-color:var(--primaru-btn-color-iis);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: var(--accent-color-ocean);
+}
+
+/* Section */
+
+.section-team {
+	background-color: var(--light-color-cloud);
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 111%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--dark-color-navy-blue);
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	color:var(--dark-color-navy-blue);
+}
+
+.text {
+	font-weight: 400;
+	color:var(--first-color-slate)
+}
+
+.team-item{
+background-color: var(--secondary-color-white);
+}
+
+
+/* Portfolio */
+.filters-btn {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+	color: var(--primaru-btn-color-iis);
+	background: var(--light-color-cloud);
+	cursor: pointer;
+}
+.filters-btn:hover,
+ .filters-btn:focus {
+	color: var(--secondary-color-white);
+	background: var(--accent-color-ocean);
+}
+
+.galery-title {
+	color: var(--dark-color-navy-blue);
+}
+
+/* Footer */
+.footer {
+	background-color: var(--dark-color-navy-blue);
+}
+.footer-text {
+	font-weight: 400;
+	color: var(--light-color-cloud);
+}
+
+.footer-logo {
+	color: var(--light-color-cloud);
+}
+
