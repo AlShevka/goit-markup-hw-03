@@ -1,5 +1,7 @@
 
 :root{
+--main-text: 'Roboto', sans-serif;
+--secondary-text: 'Raleway', sans-serif;
 --first-color-slate: #434455 ;
 --dark-color-navy-blue: #2e2f42;
 --light-color-cloud: #f4f4fd;
@@ -9,22 +11,50 @@
 
 }
 
-/* Скидання маркерів і підкреслення */
+/* Скидання маркерів і підкреслення/ Reset start */
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+.link {
+	text-decoration: none;
+	color: currentColor;
+}
+
 .list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 	
-.link {
-	text-decoration: none;
+img {
+	display: block;
 }
 
+/* Reset End */
+
+h1 {
+	text-transform: uppercase;
+}
+
+/* Body */
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--main-text);
 	color: var(--first-color-slate);
 	font-size: 16px;
 	line-height: 150%;
 	letter-spacing: 0.02em;
 	background-color: var(--secondary-color-white);
+}
+
+/* Container */
+.container {
+	box-sizing: border-box;
+	width: 1158px;
+	margin: 0 141px;
+	outline: 2px dashed #f44336;
+	padding: 0 15px;
 }
 
 /* Logo */
@@ -34,30 +64,52 @@ body{
 }
 
 .logo-link {
-	font-family: 'Raleway', sans-serif;
+	font-family: var(--secondary-text);
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 117%;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primaru-btn-color-iis);
+
+	flex-direction: row;
+	align-items: center;
+	padding: 24px 0;
+	margin-right: 76px;
 }
 
 
 /* Header */
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.nav-container{
+	display: flex;
+	align-items: center;
+	margin-right: 332px;
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	outline: 2px dashed green;
+}
+
+.menu-item {
+	padding: 24px 0;
+	margin-right: 40px;
+}
+
+.menu-item:last-child {
+	margin-right: 0;
+}
 
 .menu-link {
 	font-weight: 500;
 	color: var(--dark-color-navy-blue);
-}
-
-.contact {
-	font-style: normal;
-}
-
-.contact-link {
-	font-weight: 400;
-	color: var(--first-color-slate);
 }
 
 .menu-link:hover,
@@ -65,10 +117,31 @@ body{
 	color: var(--accent-color-ocean);
 }
 
+.mail {
+	padding: 24px 0;
+	margin-right: 40px;
+}
+
+.contact {
+	font-style: normal;
+}
+
+.contact-container {
+	display: flex;
+	align-items: center;
+}
+
+.contact-link {
+	font-weight: 400;
+	color: var(--first-color-slate);
+}
+
 .contact-link:hover,
 .contact-link:focus {
 	color: var(--accent-color-ocean);
 }
+
+
 
 /* Hero */
 
@@ -90,9 +163,9 @@ background-color: var(--dark-color-navy-blue);
 	font-size: 16px;
 	line-height: 150%;
 	letter-spacing: 0.04em;
-	cursor: pointer;
 	color: var(--secondary-color-white);
 	background-color:var(--primaru-btn-color-iis);
+	cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -135,6 +208,7 @@ background-color: var(--secondary-color-white);
 
 
 /* Portfolio */
+
 .filters-btn {
 	font-family: inherit;
 	font-weight: 500;
