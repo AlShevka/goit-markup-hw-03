@@ -38,6 +38,15 @@ h1 {
 	text-transform: uppercase;
 }
 
+.container {
+	box-sizing: border-box;
+	width: 1158px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 2px dashed #f44336;
+	padding: 0 15px;
+}
+
 /* Body */
 body{
 	font-family: var(--main-text);
@@ -46,15 +55,6 @@ body{
 	line-height: 150%;
 	letter-spacing: 0.02em;
 	background-color: var(--secondary-color-white);
-}
-
-/* Container */
-.container {
-	box-sizing: border-box;
-	width: 1158px;
-	margin: 0 141px;
-	outline: 2px dashed #f44336;
-	padding: 0 15px;
 }
 
 /* Logo */
@@ -98,7 +98,6 @@ body{
 }
 
 .menu-item {
-	padding: 24px 0;
 	margin-right: 40px;
 }
 
@@ -107,6 +106,8 @@ body{
 }
 
 .menu-link {
+	display: block;
+	padding: 24px 0;
 	font-weight: 500;
 	color: var(--dark-color-navy-blue);
 }
@@ -117,7 +118,6 @@ body{
 }
 
 .mail {
-	padding: 24px 0;
 	margin-right: 40px;
 }
 
@@ -131,6 +131,8 @@ body{
 }
 
 .contact-link {
+	display: block;
+	padding: 24px 0;
 	font-weight: 400;
 	color: var(--first-color-slate);
 }
@@ -144,7 +146,10 @@ body{
 
 /* Hero */
 
-
+.hero-container {
+	width: 1440 px;
+	height: 600px;
+}
 
 .hero {
 background-color: var(--dark-color-navy-blue);
@@ -154,10 +159,14 @@ background-color: var(--dark-color-navy-blue);
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 107%;
-	text-align: center;
+	/* text-align: center; */
 	letter-spacing: 0.02em;
 	color: var(--secondary-color-white);
+	width: 496px;
+	padding: 188px 472px 0 472px;
 	margin-bottom: 48px;
+	outline: 2px dashed #2a2a2a;
+	background-color: tomato;
 }
 
 .hero-btn {
@@ -169,6 +178,9 @@ background-color: var(--dark-color-navy-blue);
 	color: var(--secondary-color-white);
 	background-color:var(--primaru-btn-color-iis);
 	cursor: pointer;
+	width: 169px;
+	height: 56px;
+	border-radius: 4px;
 }
 
 .hero-btn:hover,
